@@ -135,6 +135,8 @@ hr {
 .video-main video {
     width: 100%;
     height: 100%;
+    max-height: 732px;
+    overflow: hidden;
     object-fit: cover;
     position: relative;
 }
@@ -400,6 +402,10 @@ a.dropdown-h4 h4 {
     top: 0px;
     z-index: 40;
 }
+
+/* .cart-content-class{
+    right: 0;
+} */
 .cart-page {
     padding: 54px 0px;
     padding-top: 189px;
@@ -407,6 +413,8 @@ a.dropdown-h4 h4 {
     max-width: 28.8%;
     height: 100%;
     max-height: 402px;
+    /* right: -1px; */
+    /* transition: right 0.6s ease; */
     position: relative;
     background: #ffffff;
 }
@@ -496,9 +504,62 @@ button.drawer__close {
 .cart__login-paragraph a {
     text-decoration: underline;
 }
+
 .nav-icon {
     display: none;
 }
+
 .nav-icon-click {
     display: none;
+}
+
+.media-nav-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.home,
+.shop,
+.aboutus,
+.faqs,
+.contactus {
+    background: #4358700a;
+    padding: 20px 20px;
+}
+
+.home a,
+.shop a,
+.aboutus a,
+.faqs a,
+.contactus a {
+    color: #435870;
+    font-size: 1.8rem;
+}
+
+.svg-wrapper svg {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.icon-login a {
+    color: #435870;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+.icon-login {
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.media-login {
+    padding: 10px 20px;
+}
+.nav-icon-click {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 36px;
+    background: #ffffff;
+    width: 100%;
+    max-width: 90%;
 }
